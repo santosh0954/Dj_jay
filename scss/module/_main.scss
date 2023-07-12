@@ -1,0 +1,50 @@
+main {
+  .mission {
+    blockquote {
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  }
+  .card-title {
+    @extend .fw-bold;
+    font-size: 1rem;
+  }
+  .card-img-top {
+    height: 195px;
+    object-fit: cover;
+  }
+  .services {
+    clip-path: polygon(0 1%, 100% 0, 100% 99%, 0% 100%);
+    @media screen and (min-width: 763px) {
+      clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+      
+    }
+  }
+  .connect {
+    background: #000 url(../img/back-view-crowd-fans-watching-live-performance-music-concert-night-copy-space.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: .8);
+      z-index: 10;
+
+    }
+    p, button {
+      position: relative;
+      z-index: 15;
+    }
+    p {
+      max-width: 600px;
+    }
+  }
+}
