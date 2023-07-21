@@ -15,6 +15,13 @@ main {
     height: 195px;
     object-fit: cover;
   }
+    .card {
+      transition: all 0.3s ease;
+    }
+  
+    .card:hover {
+      @extend .shadow;
+    }
   .services {
     clip-path: polygon(0 1%, 100% 0, 100% 99%, 0% 100%);
     @media screen and (min-width: 763px) {

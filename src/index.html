@@ -20,7 +20,7 @@
     <header class="bg-white">
       <nav class="navbar navbar-expand-lg bg-white sticky-lg-top shadow-sm">
         <div class="container-fluid container-md">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./">
             <img src="./img/logo.png" alt="logo" class="logo" />
           </a>
           <button
@@ -37,32 +37,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active" aria-current="page" href="./">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">ABOUT US</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  SERVICES
-                </a>
-                <ul class="dropdown-menu shadow">
-                  <li><a class="dropdown-item" href="#">WHAT WE DO</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">WHAT WE PROVIDE</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">PHOTOS</a>
               </li>
             </ul>
-            <button class="btn btn-danger btn-sm rounded-0 px-3">
+            <button class="btn btn-danger  rounded-0 px-3" data-bs-target="#contactUs" data-bs-toggle="modal">
               CONTACT US
             </button>
           </div>
@@ -87,7 +74,7 @@
             <span>Music that moves, moments that groove.</span>
           </p>
           <br />
-          <div class="text-white">
+          <!-- <div class="text-white">
             <a
               href="#"
               class="btn btn-light rounded-circle"
@@ -116,6 +103,13 @@
             >
               <i class="fa fa-soundcloud"></i>
             </a>
+          </div> -->
+                    
+          <div class="flex-center">
+            <i class="fa fa-facebook fa-4x icon-3d"></i>
+            <i class="fa fa-twitter fa-4x icon-3d"></i>
+            <i class="fa fa-instagram fa-4x icon-3d"></i>
+            <i class="fa fa-soundcloud fa-4x icon-3d"></i>
           </div>
         </div>
       </section>
@@ -199,7 +193,7 @@
                   alt="img"
                 />
                 <div class="card-body">
-                  <p class="card-title fw-bold">Indian Spicial</p>
+                  <p class="card-title fw-bold">Indian Special</p>
                   <p class="card-text">
                     We provide the walking down the aisle music, pre-ceremony
                     music and mic system for your officiant
@@ -356,7 +350,7 @@
             Contact our team for bookings, inquiries, or any other information
             you need.
           </p>
-          <button class="btn btn-danger btn-lg rounded-0 px-4">
+          <button class="btn btn-danger btn-lg rounded-0 px-4" data-bs-target="#contactUs" data-bs-toggle="modal">
             Get in touch
           </button>
         </div>
@@ -430,6 +424,54 @@
       </div> -->
     </footer>
     <!-- footer section start end  -->
+
+    <!-- Contact us modal start -->
+    
+    <section class="modal fade" id="contactUs" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 px-lg-2" id="contactUs">Contact us</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div>
+            <div class="alert alert-success shadow-sm border-top-0 border-bottom" role="alert">
+              If you have any questions or comments, please contact us via email or phone, or send us a message using the contact form.
+              <hr>
+              <div class="d-flex justify-content-around">
+                <span>abc@gmail.com</span>
+                <span class="border-end border-1 border-success"></span>
+                <span>+1-111-1254-121</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body p-lg-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control shadow-sm bg-light" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-sm bg-light" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="password" class="form-control shadow-sm bg-light" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message id="message" rows="5" class="form-control shadow-sm bg-light">
+                </textarea>
+              </div>
+              <button type="submit" class="btn btn-danger px-4 my-3">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact us modal end -->
 
     <!-- js  -->
     <script
