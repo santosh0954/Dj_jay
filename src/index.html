@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DJ_JAY - NYC</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,13 +41,16 @@
                 <a class="nav-link active" aria-current="page" href="./">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="./about.html">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICES</a>
+                <a class="nav-link" href="./#services">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">PHOTOS</a>
+                <a class="nav-link" href="./gallery.html">PHOTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./#testimonial">TESTIMONIAL</a>
               </li>
             </ul>
             <button class="btn btn-danger  rounded-0 px-3" data-bs-target="#contactUs" data-bs-toggle="modal">
@@ -104,12 +108,25 @@
               <i class="fa fa-soundcloud"></i>
             </a>
           </div> -->
+                      <!-- social media links 
+                      1. https://soundcloud.com/dj_jaynyc
+            2.https://www.instagram.com/dj_jaynyc/
+            3.https://www.facebook.com/DJJAYNYC
+            4. https://twitter.com/JugalHinwar -->
                     
           <div class="flex-center">
-            <i class="fa fa-facebook fa-4x icon-3d"></i>
-            <i class="fa fa-twitter fa-4x icon-3d"></i>
+            <a href="https://www.facebook.com/DJJAYNYC" target="_blank">
+              <i class="fa fa-facebook fa-4x icon-3d"></i>
+            </a>
+            <a href="https://twitter.com/JugalHinwar" target="_blank"> 
+              <i class="fa fa-twitter fa-4x icon-3d"></i>
+              </a>
+              <a href="https://www.instagram.com/dj_jaynyc/" target="_blank">
             <i class="fa fa-instagram fa-4x icon-3d"></i>
+            </a>
+            <a href="https://soundcloud.com/dj_jaynyc" target="_blank">
             <i class="fa fa-soundcloud fa-4x icon-3d"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -129,7 +146,7 @@
       </section>
       <!-- mission section start end  -->
       <!-- services section start here  -->
-      <section class="services bg-light py-5 text-center">
+      <section id="services" class="services bg-light py-5 text-center">
         <div class="container my-3">
           <h4 class="pb-3 mb-4">Services</h4>
           <div class="row justify-content-center g-4">
@@ -247,13 +264,13 @@
       <!-- services section start end  -->
 
       <!-- Testimonial section start here  -->
-      <section class="container py-5">
+      <section class="container py-5" id="testimonial">
         <div
           id="carouselExampleAutoplaying"
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner pt-4">
             <div class="carousel-item active">
               <section class="card border-0 mx-auto text-center">
                 <img
@@ -370,7 +387,10 @@
               <li class="p-2">
                 <address class="mb-0">Abc road, NYC</address>
               </li>
-              <li class="p-2">Tel: +1 (212) 345 - 6789</li>
+              <li class="p-2"><i class="fa fa-envelope fa-fw"></i> <a class="text-dark" href="mailto:djjaynyc@gmail.com">
+                djjaynyc@gmail.com </a>
+              </li>
+              <li class="p-2"><i class="fa fa-phone fa-fw"></i> <a class="text-dark" href="tel:+12123456789">+1 (212) 345 - 6789</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -430,18 +450,19 @@
     <section class="modal fade" id="contactUs" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content rounded-0">
-          <div class="modal-header">
+          <div class="modal-header bg-black rounded-0 text-white-50 fst-italic">
             <h1 class="modal-title fs-5 px-lg-2" id="contactUs">Contact us</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div>
-            <div class="alert alert-success shadow-sm border-top-0 border-bottom" role="alert">
+            <div class="alert alert-warning shadow-sm border-top-0 border-bottom" role="alert">
               If you have any questions or comments, please contact us via email or phone, or send us a message using the contact form.
               <hr>
               <div class="d-flex justify-content-around">
-                <span>abc@gmail.com</span>
+                <span> <i class="fa fa-envelope"></i> &nbsp; 	<a href="mailto:djjaynyc@gmail.com">
+                  djjaynyc@gmail.com </a></span>
                 <span class="border-end border-1 border-success"></span>
-                <span>+1-111-1254-121</span>
+                <span><i class="fa fa-phone"></i> &nbsp; <a href="tel:+12123456789">+1 (212) 345 - 6789</a></span>
               </div>
             </div>
           </div>
@@ -449,21 +470,20 @@
             <form>
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control shadow-sm bg-light" id="name">
+                <input type="text" class="form-control shadow-sm bg-light-subtle border-warning-subtle" id="name">
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control shadow-sm bg-light" id="email" aria-describedby="emailHelp">
+                <input type="email" class="form-control shadow-sm bg-light-subtle border-warning-subtle" id="email" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
               <div class="mb-3">
                 <label for="phone" class="form-label">Phone</label>
-                <input type="password" class="form-control shadow-sm bg-light" id="phone">
+                <input type="tel" class="form-control shadow-sm bg-light-subtle border-warning-subtle" id="phone">
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea name="message id="message" rows="5" class="form-control shadow-sm bg-light">
-                </textarea>
+                <textarea name="message id="message" rows="5" class="form-control shadow-sm bg-light-subtle border-warning-subtle"></textarea>
               </div>
               <button type="submit" class="btn btn-danger px-4 my-3">SUBMIT</button>
             </form>

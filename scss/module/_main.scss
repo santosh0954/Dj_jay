@@ -19,7 +19,7 @@ main {
       transition: all 0.3s ease;
     }
   
-    .card:hover {
+        .services .card:hover {
       @extend .shadow;
     }
   .services {
